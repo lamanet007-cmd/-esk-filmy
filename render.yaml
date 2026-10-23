@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: cesky-filmovy-zebricek
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /manifest.json
